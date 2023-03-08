@@ -1,0 +1,25 @@
+{% extends "Project_Basketball_Base.html.twig" %}
+
+{% block body %}
+    <h1 class= "heading1 text-light position-relative">Project Basketball</h1>
+        <table class="pbTable table text-light position-relative">
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">City</th>
+                <th scope="col">Year of foundation</th>
+                <th scope="col">Arena</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for club in club %}
+            <tr>
+                <td>{{ club.name }}</td>
+                <td>{{ club.city }}</td>
+                <td>{{ club.date_of_foundation }}</td>
+                <td>{{ club.arena }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

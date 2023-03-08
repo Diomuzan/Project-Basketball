@@ -1,0 +1,15 @@
+html, body {
+    background-image: url("/Pictures/Project_Basketball_Wallpaper.jpg");
+    background-size: 1280px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.heading1 {
+    display: inline;
+    top: 20px;
+    left: 475px;
+}
+
+.pbTable {
+    top: 50px;
+}
